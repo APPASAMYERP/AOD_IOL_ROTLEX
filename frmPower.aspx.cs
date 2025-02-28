@@ -767,7 +767,7 @@ public partial class frmPower : System.Web.UI.Page
             }
             else
             {
-                   Messagebox("Bach allot Process Not Completed..");
+                   Messagebox("Bach allot Process Not Completed...");
                    return;
             }
               if (pouch_insertValues == "")
