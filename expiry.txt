@@ -1,0 +1,152 @@
+
+                    If (strmdl = "502" Or strmdl = "601" Or strmdl = "701" Or strmdl = "nAsy207" Or strmdl = "nAs207" Or strmdl = "MFD605" Or strmdl = "502Y" Or strmdl = "601Y" Or strmdl = "701Y") Then
+                        stryear = strprefix.Substring(0, 2)
+                        strmonth = strprefix.Substring(2, 2)
+
+                    ElseIf (strmdl = "SPNT200" Or strmdl = "HPNT200" Or strmdl = "SP-TORIC T3" Or strmdl = "SP-TORIC T4" Or strmdl = "SP-TORIC T5" Or strmdl = "SP-TORIC T6" Or strmdl = "SP-TORIC T7" Or strmdl = "SP-TORIC T8" Or strmdl = "SP-TORIC T9") Then
+
+                     stryear = strprefix.Substring(1, 2)
+                       strmonth = strprefix.Substring(3, 2)
+                    ElseIf (strmdl = "SPNT200MF") Then
+                        stryear = strprefix.Substring(2, 2)
+                        strmonth = strprefix.Substring(4, 2)
+
+                    End If
+
+                    'stryear = StrLot1.Substring(1, 2)
+                    'strmonth = StrLot1.Substring(3, 2)
+                    If (strmdl = "502" Or strmdl = "601" Or strmdl = "701" Or strmdl = "nAsy207" Or strmdl = "nAs207" Or strmdl = "MFD605" Or strmdl = "502Y" Or strmdl = "601Y" Or strmdl = "701Y") Then
+                        If strmonth = "01" Then
+
+                            strmonth1 = strmonth
+                            stryear1 = Convert.ToString(Convert.ToInt32(stryear) + 2000)
+
+                            strexpmonth1 = Convert.ToString((Convert.ToUInt32(strmonth) - 1) + 12)
+                            strexpyear1 = Convert.ToString(Convert.ToInt32(stryear) + 2002)
+
+                        Else
+                            strmonth1 = strmonth
+                            stryear1 = Convert.ToString(Convert.ToInt32(stryear) + 2000)
+
+                            strexpyear1 = Convert.ToString(Convert.ToInt32(stryear) + 2003)
+
+                            strexpmonth1 = "0" & Convert.ToString(Convert.ToUInt32(strmonth - 1))
+
+                        End If
+
+
+                    ElseIf (strmdl = "SPNT200" Or strmdl = "HPNT200" Or strmdl = "SP-TORIC T3" Or strmdl = "SP-TORIC T4" Or strmdl = "SP-TORIC T5" Or strmdl = "SP-TORIC T6" Or strmdl = "SP-TORIC T7" Or strmdl = "SP-TORIC T8" Or strmdl = "SP-TORIC T9") Then
+                        If strmonth = "01" Then
+
+                            strmonth1 = strmonth
+                            stryear1 = Convert.ToString(Convert.ToInt32(stryear) + 2000)
+
+                            strexpmonth1 = Convert.ToString((Convert.ToUInt32(strmonth) - 1) + 12)
+                            strexpyear1 = Convert.ToString(Convert.ToInt32(stryear) + 2004)
+
+                        Else
+                            strmonth1 = strmonth
+                            stryear1 = Convert.ToString(Convert.ToInt32(stryear) + 2000)
+
+                            strexpyear1 = Convert.ToString(Convert.ToInt32(stryear) + 2005)
+
+                            strexpmonth1 = "0" & Convert.ToString(Convert.ToUInt32(strmonth - 1))
+
+                        End If
+
+
+                    ElseIf (strmdl = "AE-01") Then
+
+                        If StrMfDMonth = "1" Then
+
+
+                            strmonth1 = StrMfDMonth
+
+                            stryear1 = Format(Convert.ToString(Convert.ToInt32(StrMfDYear)), "00")
+
+
+                            strexpmonth1 = Format(Convert.ToString((Convert.ToUInt32(StrMfDMonth) - 1) + 12), "00")
+
+                            strexpyear1 = Format(Convert.ToString(Convert.ToInt32(StrMfDYear) + 4), "0000")
+
+                        Else
+                            strmonth1 = Format(StrMfDMonth, "00")
+
+                            stryear1 = Format(Convert.ToString(Convert.ToInt32(StrMfDYear)), "00")
+
+                            strexpyear1 = Format(Convert.ToString(Convert.ToInt32(StrMfDYear) + 5), "0000")
+
+                            strexpmonth1 = Format(Convert.ToString(Convert.ToUInt32(StrMfDMonth - 1)), "00")
+
+                        End If
+
+
+
+
+
+
+
+
+
+                    ElseIf (strmdl = "SPNT200MF") Then
+
+
+                        If strmonth = "01" Then
+
+                            strmonth1 = strmonth
+                            stryear1 = Convert.ToString(Convert.ToInt32(stryear) + 2000)
+
+                            strexpmonth1 = Convert.ToString((Convert.ToUInt32(strmonth) - 1) + 12)
+                            strexpyear1 = Convert.ToString(Convert.ToInt32(stryear) + 2004)
+
+                        Else
+                            strmonth1 = strmonth
+                            stryear1 = Convert.ToString(Convert.ToInt32(stryear) + 2000)
+
+                            strexpyear1 = Convert.ToString(Convert.ToInt32(stryear) + 2005)
+
+                            strexpmonth1 = "0" & Convert.ToString(Convert.ToUInt32(strmonth - 1))
+
+                        End If
+
+                    ElseIf (strmdl = "SCE") Then
+                        StrMfDMonth = Now.Month
+                        StrMfDYear = Now.Year
+
+
+                        StrExpmonth = StrMfDMonth - 1
+                        StrExpYear = StrMfDYear + Int_CaTotExp
+
+                        If StrExpmonth = 0 Then
+                            StrExpmonth = 12
+                            StrExpYear = StrExpYear - 1
+                        End If
+
+                        LblShowMfdDate.Text = StrMfDMonth & "-" & StrMfDYear
+                        LblShowExpDate.Text = StrExpmonth & "-" & StrExpYear
+
+
+
+                    End If
+
+                    'StrExpmonth = StrMfDMonth - 1
+                    'StrExpYear = StrMfDYear + IntTotExp
+
+                    'If StrExpmonth = 0 Then
+                    '    StrExpmonth = 12
+                    '    StrExpYear = StrExpYear - 1
+                    'End If
+                    If (strmdl <> "SCE") Then
+                        LblShowMfdDate.Text = strmonth1 & "-" & stryear1
+                        LblShowExpDate.Text = strexpmonth1 & "-" & strexpyear1
+                    End If
+
+                Else
+
+                    StrExpmonth = StrMfDMonth - 1
+                    StrExpYear = StrMfDYear + IntTotExp
+
+                    If StrExpmonth = 0 Then
+                        StrExpmonth = 12
+                       StrExpYear = StrExpYear - 1
+                    End If

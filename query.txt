@@ -1,0 +1,10 @@
+strsql = " insert into POUCH_LABEL (Brand_Name,Model_Name,Reference_Name,GS_Code,Power,Optic,Length,Lot_Unit," & _
+                     "A_Constant,Type_GS_Code,Qty,St_SrNo,St_EnNo,Lot_Prefix,Lot_No,Lot_SrNo,Mfd_Month,Mfd_Year,Exp_Month,Exp_Year,Sterilization, " & _
+                     "Sample_Taken,Type_Sample,BPL_Taken,Box_Packing,Dc_Packing,Created_By,Created_Date,Modified_By,Modified_Date,Sterilization_Reject,Qty_1,Type,Sterilization_After,Box_Reject,Print_Name,R_Power,Cylsize) values ( " & _
+                     "'" & CmbShBrand.Text & "','" & CmbShModel.Text & "','" & LblShowRefName.Text & "','" & LblShowGSCode.Text & "','" & CmbShPower.Text & "','" & LblShowOptic.Text & "','" & LblShowLength.Text & "' ," & _
+                     "'mm','" & LblshAConstant.Text & "','" & LblShowGSType.Text & "','" & txtquantity.Text & "','" & StrStPrQty & "','" & StrEnPrQty & "','" & LblShowLotPrefix.Text & "','" & LblShowLotNo.Text & "','" & StrLotBarNo & "' , " & _
+                     "'" & StrMfDMonth & "','" & StrMfDYear & "','" & StrExpmonth & "','" & StrExpYear & "',0,0,'NO',0,0,0,'" & StrLoginUser & "',GETDATE(), '" & StrLoginUser & "',GETDATE(),0,1,'" & CmbType.Text & "',0,0,'" & LblShowRefName.Text & "','" & txtrpwr.Text & "','" & txtcylsize.Text & "')"
+
+                cmd = New SqlCommand(strsql, con)
+                cmd.ExecuteNonQuery()
+                cmd.Dispose()

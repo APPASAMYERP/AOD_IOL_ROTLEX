@@ -1,0 +1,172 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage"   %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+    </style>
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+     <script type="text/javascript">
+         var inactivityTime = function () {
+             var time;
+             window.onload = resetTimer;
+             window.onmousemove = resetTimer;
+             window.onkeydown = resetTimer;
+
+             function logout() {
+                 window.location.href = 'LoginPage.aspx'; // Redirect to login page
+             }
+
+             function resetTimer() {
+                 clearTimeout(time);
+                 time = setTimeout(logout, 600000); // 10 minutes in milliseconds
+             }
+         };
+         inactivityTime();
+</script>
+</head>
+<body style="margin: 0px; background-image: url('images/mask.png');background-color:rgba(223, 228, 246, 0.87);">
+    <form id="form1" runat="server">
+    <div align="center">
+    
+        <table cellpadding="0" cellspacing="0" width="990px" bgcolor="White">
+        
+            <tr>
+            
+                <td>
+                    <table  cellpadding="0" cellspacing="0" class="style1">
+                   
+            <tr>
+                <td align="left" style="width: 273px; height: 75px; padding-left:1px; padding-bottom:5px;">
+                      <img alt="" src="images/Phobic_logo.png" style="width: 271px; border-radius: 4px; padding-top:1px;"/>
+                </td>
+
+                <td align="center" style="height: 75px; padding-left:2px;">
+                
+                </td>
+
+                <td align="right" style="width: 224px; height: 75px;">
+                    <img alt="" src="images/appa_logo.png"/>
+                </td>
+            </tr>
+                    
+       </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-left: 0px; padding-top: 12px;" valign="top" align="left">
+                    <table cellpadding="0" cellspacing="2" width="100%">
+                      <tr><hr class="hr_bar"/></tr>
+                        <tr>
+                            <td width="200" valign="top">&nbsp;</td>
+                                <td style="padding-left: 3px; padding-right: 3px" valign="top" align="right">
+                                    <%--<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Loginpage.aspx" 
+                                        Font-Size="Medium" ForeColor="Maroon" ToolTip="LogOut" 
+                                        OnClick="LinkButton1_Click" ondatabinding="LinkButton1_Click">Log Out</asp:HyperLink>--%>     
+                                                                
+                                       <asp:Label ID="lblname" runat="server" Text="" ></asp:Label>
+                                    <asp:Button ID="Button1" runat="server" Text="Log Out" valign="top" 
+                                        align="right" onclick="Button1_Click"/>
+
+                                </td>
+                            </tr>
+                        <tr>
+                            <td width="200" valign="top">
+                    <table cellpadding="0" cellspacing="0" width="200px">
+                        <tr>
+                            <td bgcolor="#6090BF" 
+                                style="font-family: Arial; font-size: 12pt;color: White;padding: 5px; font-weight:bold; display:block;	text-align:center; vertical-align: middle;	border: 1px solid #e6e6e6;	background-color: #00207D;">
+                                Menu Items</td>
+                        </tr>
+                        <tr>
+                            <td>
+                    <asp:Menu ID="Menu1" runat="server" Width="200px" onmenuitemclick="Menu1_MenuItemClick1">
+                        <StaticMenuItemStyle CssClass="staticstyel" />
+                        
+                        
+                        <DynamicMenuItemStyle CssClass="dynamicstyel" />
+                        <Items>
+                                      <%--  <asp:MenuItem Text="Home" Value="Master Form">
+                                        </asp:MenuItem>--%>
+                                        <asp:MenuItem NavigateUrl="~/BtchforMould.aspx" Text="Batch Allot" 
+                                            Value="Batch Allot"></asp:MenuItem>
+                                        
+                                    
+                                        <asp:MenuItem NavigateUrl="~/PowerSegregation.aspx" Text="Power Segregation" 
+                                            Value="Power Segregation"></asp:MenuItem>
+                                        <asp:MenuItem NavigateUrl="~/frmPower.aspx" Text="Power Confirmation" 
+                                            Value="Power Confirmation"></asp:MenuItem>
+                                        
+                                        <%--<asp:MenuItem Text="Glassy Tumbling" Value="Glassy Tumbling">   
+                                            <asp:MenuItem NavigateUrl="~/GlassyTumblingSI.aspx" Text="SO For Glassy Tumbling" Value="SO For Glassy Tumbling">
+                                            </asp:MenuItem>
+                                            <asp:MenuItem NavigateUrl="~/ModelPowerConfirm.aspx" Text="Model And Power Confirm" Value="Model And Power Confirm">
+                                            </asp:MenuItem>
+                                        </asp:MenuItem>--%>
+                                        <asp:MenuItem Text="FQI Documents" Value="FQI Documents">
+                                            <asp:MenuItem NavigateUrl="~/LensWipingDoc.aspx" Text="Lens Wiping" 
+                                                Value="Lens Wiping"></asp:MenuItem>
+                                            <asp:MenuItem NavigateUrl="~/PickPacking.aspx" Text="Pick Packing" 
+                                                Value="Pick Packing"></asp:MenuItem>
+                                                
+                                             <asp:MenuItem NavigateUrl="~/ModelPowerConfirm.aspx" 
+                                                Text="Sample PI For Packing" Value="Sample Power Inspection"></asp:MenuItem>
+                                            <asp:MenuItem NavigateUrl="~/MI_FQI.aspx" Text="MI FQI" Value="MI FQI">
+                                            </asp:MenuItem>
+                                            <%--<asp:MenuItem NavigateUrl="~/RotlexUpload.aspx" Text="Data Upload" Value="Data Upload"></asp:MenuItem>--%>
+                                            <asp:MenuItem NavigateUrl="~/BlisterSealing.aspx"  Text="Blister Sealing" Value="Blister Sealing"></asp:MenuItem>
+                                            
+                                          <%--  <asp:MenuItem Text="Blister Sealing" Value="Sealing Pouch"></asp:MenuItem>--%>
+                                            <%--<asp:MenuItem NavigateUrl="~/PackingReport.aspx" Text="Process Reports" Value="Process Reports">--%>
+                                             <asp:MenuItem NavigateUrl="~/ReportTrail.aspx" Text="Process Reports" Value="Process Reports">
+                                        </asp:MenuItem>
+<%--                                            <asp:MenuItem NavigateUrl="~/Packing_LotResult.aspx" 
+                                                Text="Packing And Lot Result" Value="Packing and Lot Result"></asp:MenuItem>--%>
+                                        <%--<asp:MenuItem NavigateUrl="~/LabelDetails.aspx" Text="Label Details" 
+                                                Value="Label Deatils"></asp:MenuItem>--%>
+                                        </asp:MenuItem>
+                    
+                                    </Items>
+                        <StaticItemTemplate>
+                             <%# Eval("Text") %>
+                        </StaticItemTemplate>
+                    </asp:Menu>
+                            </td>
+                        </tr>
+                    </table>
+                                </td>
+                                <td style="padding-left: 3px; padding-right: 3px" valign="top">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                                </td>
+                            </tr>
+                        </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="left" style="font-family: Arial; color: #FFFFFF; background-color: #00207D;">
+        <table cellspacing="0" cellpadding="0">
+        <tr> 
+          <td align="left"  style="font-family: Arial; color: #FFFFFF; background-color: #00207D;">
+        <span style="text-align:left; padding: 5px;"> © 2014, Appasamy Associates. All rights reserved. </span>
+        </td>
+         <td align="left" style="font-family: Arial; color: #FFFFFF; background-color: #00207D;">
+        <span style="margin-left: 540px;">
+            <img style="width: 53px; height: 46px;margin-top: 3px;" src="images/erp_logo.png"/></span>
+        </td>
+        </tr>
+        </table>
+        </td>
+        </tr>
+        </table>
+    
+    </div>
+    </form>
+</body>
+</html>

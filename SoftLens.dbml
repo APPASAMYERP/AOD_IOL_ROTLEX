@@ -1,0 +1,1185 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MOULDING" Class="SoftLensDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=iolserver2023;Initial Catalog=MOULDING;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="PHOBICConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.HydrationAftTumbling" Member="HydrationAftTumblings">
+    <Type Name="HydrationAftTumbling">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TumblingLotNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="StartDate" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="StartTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="StartTimeCal" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="StopDate" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="StopTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="StartQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Acceptedqty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Rejectedqty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Duration" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RejectedReason" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RejMTSNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Shift" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Hydratedby" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PowerMaster" Member="PowerMasters">
+    <Type Name="PowerMaster">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Radius1" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Radius2" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LatheMaster" Member="LatheMasters">
+    <Type Name="LatheMaster">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LatheNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ToolId" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Login" Member="Logins">
+    <Type Name="Login">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LoginName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DespatchChild" Member="DespatchChilds">
+    <Type Name="DespatchChild">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DCNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Model" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubModel" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Brand" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="TakenQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LotNo" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="RequiredQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RefID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PackingEntryTable" Member="PackingEntryTables">
+    <Type Name="PackingEntryTable">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LotNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Model" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubModel" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Brand" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="SerialFrom" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SerialTo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Qty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RemainingQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TakenQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BPLNO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Date" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SterileBatchNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ManufactureDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ExpiryDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BoxPackgcollecList" Member="BoxPackgcollecLists">
+    <Type Name="BoxPackgcollecList">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BplNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Model" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Power" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AsDate" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AeDate" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Nod" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Total" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CollecQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BalQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CollecBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QcSerialNo" Member="QcSerialNos">
+    <Type Name="QcSerialNo">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TestType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LotNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SerialNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PackingEntryData" Member="PackingEntryDatas">
+    <Type Name="PackingEntryData">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LotNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Model" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubModel" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Brand" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="SerialFrom" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SerialTo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Qty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RemainingQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TakenQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BPLNO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Date" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SterileBatchNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ManufactureDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ExpiryDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LensBoxPackingRejection" Member="LensBoxPackingRejections">
+    <Type Name="LensBoxPackingRejection">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BplNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RejecQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LotNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SerialNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LensModel" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Pdama" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Pseal" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Pstrain" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Pstain" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PCdama" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PCdots" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PClabel" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PCseal" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PPhair" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PPdust" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PPburr" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PPthread" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PPliqLev" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PPoth" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QualityControl" Member="QualityControls">
+    <Type Name="QualityControl">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BatchNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LotNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Model" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Quantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Type" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LenscollectBoxPackRecord" Member="LenscollectBoxPackRecords">
+    <Type Name="LenscollectBoxPackRecord">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BPLno" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Model" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Brand" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="QtyReceived" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="QtyAccepted" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="QtyRejected" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="InspectedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SnoRejLens" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LPrintedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Boxprepby" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PnOuterLby" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="shrkPacBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Rmks" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LnPckLotNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LnPckQty" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FpStrQty" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FpDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FpMtsNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ThbDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ThbMtsNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ThbQty" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ToStrMtsNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ToStrQty" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ToStrDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PRNnum" Member="PRNnums">
+    <Type Name="PRNnum">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PRNno" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ApprovedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AuthSign" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DespatchTable" Member="DespatchTables">
+    <Type Name="DespatchTable">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DCNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ToName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IndentNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NoOfPacking" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DcDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TransactionDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="OrderRef" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ModeOfDespatch" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Remarks" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MHSRnew" Member="MHSRnews">
+    <Type Name="MHSRnew">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MHSR" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Shift" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="BNoMHSR" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CheckedBySterility" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Chemist" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DateMHSR" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DoorClosedTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DoorOpenedTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LalTest" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MaintainedUpto" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Operator" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OtherTest" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Particulars" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Press" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PressAttainedTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ProductRelease" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="QuqlityControlCycle" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RecordRef" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ResultCycle" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ResultSterility" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SteamOpenedTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SterilityTest" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Temp" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="VentClosedTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="VentOpenedTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MHSR" Member="MHSRs">
+    <Type Name="MHSR">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MHSRNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Shift" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BatchNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DateLoad" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LotNo1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LotNo2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LotNo3" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LotNo4" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LotNo5" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LotNo6" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DummyLotNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="qty1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="qty2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="qty3" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="qty4" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="qty5" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="qty6" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="qtyDummy" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BI1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BI2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BI3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BI4" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BI5" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BI6" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BI7" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BI8" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BI9" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BI10" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BI11" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BI12" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Mode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ExposureTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RoomTemp" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="StartTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="StartDay" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="StopTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="StopDay" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CycleTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BeforeChemical" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AfterChemical" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ResultChemical" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CheckedByChemical" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BeforeBio" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AfterBio" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CheckedByBio" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ResultBio" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DateMHSR" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BNoMHSR" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Particulars" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="DoorClosedTime" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="SteamOpenedTime" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="VentClosedTime" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="PressAttainedTime" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Press" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Temp" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MaintainedUpto" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="VentOpenedTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DoorOpenedTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Operator" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Chemist" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SterilityTest" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LalTest" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OtherTest" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ResultSterility" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RecordRef" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CheckedBySterility" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ResultCycle" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="QuqlityControlCycle" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ProductRelease" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MillingLatheNoMaster" Member="MillingLatheNoMasters">
+    <Type Name="MillingLatheNoMaster">
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MillingLatheNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SI_Tumbling" Member="SI_Tumblings">
+    <Type Name="SI_Tumbling">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TumblingNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ModelNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="JarNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Location" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="InspectedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Time" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Day" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SampleNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Remarks" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SealingCupandPouch" Member="SealingCupandPouches">
+    <Type Name="SealingCupandPouch">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SealingProcess" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TumblingLotNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TotalQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ModelNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TotCompletedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="ReceivedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BalanceQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ProgQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AcceptedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RejectedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SealingDoneBy1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SealingDoneBy2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PrevDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ModelMaster" Member="ModelMasters">
+    <Type Name="ModelMaster">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Model" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SubModel" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BrandName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[Inprocess Power Inspection]" Member="Inprocess_Power_Inspections">
+    <Type Name="Inprocess_Power_Inspection">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TumblingLotNo1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Tumbling1Power1" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Tumbling11Sample1" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Tumbling21Sample1" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Tumbling31Sample1" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Tumbling41Sample1" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Tumbling51Sample1" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Tumbling1Remarks1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Tumbling1InspectedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Tumbling1Date1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.InspectionsDoc" Member="InspectionsDocs">
+    <Type Name="InspectionsDoc">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LotNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SerialNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.InspectionDocData" Member="InspectionDocDatas">
+    <Type Name="InspectionDocData">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LotNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Model" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SubModel" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Brand" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="SerialFrom" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SerialTo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Qty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RemainingQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SterileBatchno" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ManufactureDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ExpiryDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TumblingChild" Member="TumblingChilds">
+    <Type Name="TumblingChild">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TumblingNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ModelNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LotNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Quantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Flag" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tumbling" Member="Tumblings">
+    <Type Name="Tumbling">
+      <Column Name="IdNo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ModelNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TumblingLotNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TotalQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="JarNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Location" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="StartTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="StopDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="StopTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="StartTimeCal" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Duration" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Remarks" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Tumbledby" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BatchAllot" Member="BatchAllots">
+    <Type Name="BatchAllot">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LotNo" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="BatchNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="WaxId" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AllotedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ModelNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Shift" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Radius" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="ApprovedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Blocking" Member="Blockings">
+    <Type Name="Blocking">
+      <Column Name="IdNo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LotNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BlockingType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ReceivedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FinishedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AcceptedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BalanceQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RejectedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Waxtemp" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Remarks" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Blockedby" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Shift" Storage="_shift" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DeBlocking" Member="DeBlockings">
+    <Type Name="DeBlocking">
+      <Column Name="IdNo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LotNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BlockingType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FinishedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReceivedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AcceptedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BalanceQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RejectedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="WaxTemp" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Remarks" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Deblockedby" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Shift" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Lathecut" Member="Lathecuts">
+    <Type Name="Lathecut">
+      <Column Name="IdNo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LotNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LatheType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AcceptedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReceivedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FinishedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RejectedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BalanceQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LatheNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ToolId" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="StartTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EndTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Duration" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Remarks" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="OperatorName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Shift" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HapticSample" Member="HapticSamples">
+    <Type Name="HapticSample">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LotNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BlockingType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SampleNo1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SampleNo2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SampleNo3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sample1MiStatus" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sample2MiStatus" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sample3MiStatus" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sample1ProfileStatus" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sample2ProfileStatus" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sample3ProfileStatus" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sample1Haptic" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Sample2Haptic" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Sample3Haptic" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Sample1Remarks" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Sample1InspectedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Sample1Shift" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sample1Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Hydration" Member="Hydrations">
+    <Type Name="Hydration">
+      <Column Name="IdNo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LotNo" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="StartTimeCal" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="StopTimeCal" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="StartTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="StopDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="StopTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="StartQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Acceptedqty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Rejectedqty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Duration" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RejectedReason" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RejMTSNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Shift" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Hydratedby" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TumblingRefNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LensMeasurement" Member="LensMeasurements">
+    <Type Name="LensMeasurement">
+      <Column Name="IdNo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LotNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BlockingType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SampleNo1Status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SampleNo2Status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SampleNo3Status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SampleNo1LensDiameter" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="SampleNo2LensDiameter2" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="SampleNo3LensDiameter3" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="SampleNo1LensThickness" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="SampleNo2LensThickness2" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="SampleNo3LensThickness3" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Remarks1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Inspectedby1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="StatusShift" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SampleNo1Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LotResult" Member="LotResults">
+    <Type Name="LotResult">
+      <Column Name="IdNo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LotNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FinishedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReceivedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BalanceQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AcceptedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RejectedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Remarks" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="InspectedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Shift" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MicroscopicInspection" Member="MicroscopicInspections">
+    <Type Name="MicroscopicInspection">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LotNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BlockingType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Sample1Status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sample2Status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sample3Status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Sample1Remarks" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Sample1InspectedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Sample1Shift" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sample1Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RejMTSNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Milling" Member="Millings">
+    <Type Name="Milling">
+      <Column Name="IdNo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LotNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FinishedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReceivedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AcceptedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BalanceQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RejectedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MillingLatheNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="StartTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EndTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Duration" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Remarks" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OperatorName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Shift" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Powerinspection" Member="Powerinspections">
+    <Type Name="Powerinspection">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LotNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BlockingType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SampleNo1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SampleNo2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SampleNo3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PowerStatus1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PowerStatus2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PowerStatus3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BeforeHydSample1" Type="System.Decimal" DbType="Decimal(18,1)" CanBeNull="true" />
+      <Column Name="BeforeHydSample2" Type="System.Decimal" DbType="Decimal(18,1)" CanBeNull="true" />
+      <Column Name="BeforeHydSample3" Type="System.Decimal" DbType="Decimal(18,1)" CanBeNull="true" />
+      <Column Name="AfterHydSample1" Type="System.Decimal" DbType="Decimal(18,1)" CanBeNull="true" />
+      <Column Name="AfterHydSample2" Type="System.Decimal" DbType="Decimal(18,1)" CanBeNull="true" />
+      <Column Name="AfterHydSample3" Type="System.Decimal" DbType="Decimal(18,1)" CanBeNull="true" />
+      <Column Name="Sample1Remarks" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Sample1InspectedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Sample1Shift" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sample1Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MicroScopicInspCollet" Member="MicroScopicInspCollets">
+    <Type Name="MicroScopicInspCollet">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LotNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BlockingType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ReceivedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FinishedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AcceptedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RejectedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BalanceQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RejMts" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Remarks" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="InspectedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Shift" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.InspectionResolution" Member="InspectionResolutions">
+    <Type Name="InspectionResolution">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LotNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BlockingType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ReceivedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FinishedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AcceptedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RejectedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BalanceQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RejMts" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Remarks" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="InspectedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Shift" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MattTumblingLens" Member="MattTumblingLens">
+    <Type Name="MattTumblingLen">
+      <Column Name="IdNo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TumblingLotNo" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PhobicID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModelNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="LensCutLot" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TotalQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Tumbledby" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SO_MattTumbling" Member="SO_MattTumblings">
+    <Type Name="SO_MattTumbling">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TumblingNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ModelNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="JarNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Duration" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="InspectedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Time" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Day" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SampleNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Remarks" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ModelPower" Member="ModelPowers">
+    <Type Name="ModelPower">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GRFLotno" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TumblingLotno" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ModelNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="JarNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Sample1Status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sample2Status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sample3Status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sample4Status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sample5Status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sample6Status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sample7Status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sample8Status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sample9Status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sample10Status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sample1Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Sample2Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Sample3Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Sample4Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Sample5Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Sample6Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Sample7Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Sample8Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Sample9Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Sample10Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="ModelStatus" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PowerStatus" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ModelIns" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PowerIns" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TumblingQuantityDetails" Member="TumblingQuantityDetails">
+    <Type Name="TumblingQuantityDetail">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TumblingNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="GlassyRecordRef" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RetumblingQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RetumblingNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MillingCleanedLens" Member="MillingCleanedLens">
+    <Type Name="MillingCleanedLen">
+      <Column Name="IdNo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LotNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="InspectedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AcceptedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RejectedQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ESC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SCR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LB" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CHIP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BURR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="THICK" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OTHERS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OFFSET" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CUTTING" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TotalRejQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RejectionMTSNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Inspectedby" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Approvedby" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Shift" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TumblingNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FirstRetumblingReport" Member="FirstRetumblingReports">
+    <Type Name="FirstRetumblingReport">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GlassyNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TumblingNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Model" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="TotalQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AcceptedQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RetumblingQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RejectedQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Shift" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="JarNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Remarks" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ApprovedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PackingReport" Member="PackingReports">
+    <Type Name="PackingReport">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GlassyRefNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TumblingLotNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Model" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="JarNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TotalQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AcceptedQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RetumblingQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RejectedQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Remarks" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PackedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ApprovedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PowerSegregationTable" Member="PowerSegregationTables">
+    <Type Name="PowerSegregationTable">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TumblingNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RetumblingNo1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RetumblingNo2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RetumblingNo3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RecievedQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReceivedQty1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReceivedQty2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReceivedQty3" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AcceptedQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AcceptedQty1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AcceptedQty2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AcceptedQty3" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RejectedQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RejectedQty1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RejectedQty2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RejectedQty3" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Resolution" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Resolution1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Resolution2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Resolution3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TotalQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TotalQty1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TotalQty2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TotalQty3" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Remarks" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Remarks1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Remarks2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Remarks3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="InspectedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="InspectedBy1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="InspectedBy2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="InspectedBy3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Date1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Date2" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Date3" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Flag" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PowerSegregationChild" Member="PowerSegregationChilds">
+    <Type Name="PowerSegregationChild">
+      <Column Name="TumblingNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Qty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GlassyRecordRef" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LensWiping" Member="LensWipings">
+    <Type Name="LensWiping">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GlassyNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Model" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TotalQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="ReceivedQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ProgressingQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BalanceQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AcceptedQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RejectedQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TumblingNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="WipingBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Remarks" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Pick_Packing" Member="Pick_Packings">
+    <Type Name="Pick_Packing">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GlassyNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Model" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TotalQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="ReceivedQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ProgressingQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BalanceQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AcceptedQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RejectedQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TumblingNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PickpackingBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Remarks" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BlisterSealingTable" Member="BlisterSealingTables">
+    <Type Name="BlisterSealingTable">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GlassyNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Model" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="TotalQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReceivedQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BalanceQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ProgressQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AcceptedQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RejectedQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SealdoneBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MagnidoneBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GlassyTumblingSO" Member="GlassyTumblingSOs">
+    <Type Name="GlassyTumblingSO">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GRFLotNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TumblingLotNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ModelNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Sample1Status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sample2Status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sample3Status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SampleRemarks" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SampleInspectedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SampleDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="JarNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="StartTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EndTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Duration" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MIinFQI" Member="MIinFQIs">
+    <Type Name="MIinFQI">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GlassyNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Model" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TotalQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="RecievedQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ProgressQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BalanceQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AcceptedQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RetumblingQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RejectedQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TumblingRefNo" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Dots" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Islands" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LB" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SCR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Cutting" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Other" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TotalRejQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Remarks" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RejMTSNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ApprovedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LabelDetailsPacking" Member="LabelDetailsPackings">
+    <Type Name="LabelDetailsPacking">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GlassyNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Model" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TotalQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="LotNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="StartNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EndNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Qty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Remarks" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PackedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SubModel" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BrandName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ExpiryDate" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TumblingRefNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BatchFinalReport" Member="BatchFinalReports">
+    <Type Name="BatchFinalReport">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PhobicId" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LotNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Model" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TotalQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AcceptedQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RejectedQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LensPreperation_Details" Member="LensPreperation_Details">
+    <Type Name="LensPreperation_Detail">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TumblingRefNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LotNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Model" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Qty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PhobicId" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RemattTumblingLens" Member="RemattTumblingLens">
+    <Type Name="RemattTumblingLen">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Glassy1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Glassy2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Glassy3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AcceptedQty1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AcceptedQty2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AcceptedQty3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RetumblingRef1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RetumblingRef2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RetumblingRef3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Model1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Model2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Model3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Power1" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Power2" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Power3" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="TumblingLotNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PreparedBy1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PreparedBy2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PreparedBy3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Date2" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Date3" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PhobicId" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FinalLensPreparation" Member="FinalLensPreparations">
+    <Type Name="FinalLensPreparation">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TumblingNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Model" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PhobicId" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TotalQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="StartTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EndDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EndTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HapticPowerTable" Member="HapticPowerTables">
+    <Type Name="HapticPowerTable">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LotNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BlockingType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SampleNo1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SampleNo2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SampleNo3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PowerSample1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PowerSample2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PowerSample3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PowerValue1" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="PowerValue2" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="PowerValue3" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Haptic1" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Haptic2" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Haptic3" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Remarks" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="InspectedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Shift" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Pouch_Delete" Member="Pouch_Deletes">
+    <Type Name="Pouch_Delete">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="rotlex_type" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="RefLot" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Label" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Type" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Brand_Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Model_Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Reference_Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Power" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Qty" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Created_By" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Created_Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Modified_By" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Modified_Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="R_Power" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CySize" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Report_Table" Member="Report_Tables">
+    <Type Name="Report_Table">
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Model" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="TumblingNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PhobicId" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RetumblingNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="WaitingTumbling" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RunningTumbling" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="WaitingPowerSegregation" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="WaitingPouchPacking" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GlassyNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MI_FQIReject" Member="MI_FQIRejects">
+    <Type Name="MI_FQIReject">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="rotlex_type" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="RefLot" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Label" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Type" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Brand_Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Model_name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Reference_Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Power" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Qty" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Created_By" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Created_Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Modified_By" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Modified_Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="R_Power" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CySize" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Lensometer_PowerCheck" Member="Lensometer_PowerChecks">
+    <Type Name="Lensometer_PowerCheck">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TumblingNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RetumblingNo1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RetumblingNo2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RetumblingNo3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RecievedQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReceivedQty1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReceivedQty2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReceivedQty3" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AcceptedQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AcceptedQty1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AcceptedQty2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AcceptedQty3" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RejectedQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RejectedQty1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RejectedQty2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RejectedQty3" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Resolution" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Resolution1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Resolution2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Resolution3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TotalQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TotalQty1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TotalQty2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TotalQty3" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Remarks" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Remarks1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Remarks2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Remarks3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="InspectedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="InspectedBy1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="InspectedBy2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="InspectedBy3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Date1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Date2" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Date3" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Flag" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NewBtchAllot" Member="NewBtchAllots">
+    <Type Name="NewBtchAllot">
+      <Column Name="Rowid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LotNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Brand_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Model" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SolutionId" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Shift" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Volume" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Quantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ApprovedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Reflot" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Product_Type" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Planned_power" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

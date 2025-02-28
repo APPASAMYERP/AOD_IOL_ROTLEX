@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "PHOBIC", "..\PHOBIC", "{FAF08179-1934-4D1D-A7EF-CED9413C64A6}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""$/Phobic", EVOAAAAA"
+		SccAuxPath = ""
+		SccLocalPath = "."
+		SccProvider = "MSSCCI:Microsoft Visual SourceSafe"
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/PHOBIC"
+		Debug.AspNetCompiler.PhysicalPath = "..\PHOBIC\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\PHOBIC\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/PHOBIC"
+		Release.AspNetCompiler.PhysicalPath = "..\PHOBIC\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\PHOBIC\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "5000"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 1
+		SccWebProject0 = true
+		SccProjectUniqueName0 = .
+		SccProjectName0 = \u0022$/Phobic\u0022,\u0020EVOAAAAA
+		SccLocalPath0 = D:\\Working_Folder\\PHOBIC
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectEnlistmentChoice0 = 2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAF08179-1934-4D1D-A7EF-CED9413C64A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAF08179-1934-4D1D-A7EF-CED9413C64A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

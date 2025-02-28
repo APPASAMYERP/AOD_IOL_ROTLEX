@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 12.625, 8.75" name="SoftLens">
+  <DataContextMoniker Name="/SoftLensDataContext" />
+  <nestedChildShapes>
+    <classShape Id="50e829d2-d39e-4ce8-abc0-e1af72b7e7ff" isExpanded="false" absoluteBounds="0.5, 6.75, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/SoftLensDataContext/HydrationAftTumbling" />
+      <nestedChildShapes>
+        <elementListCompartment Id="660332cb-9e0d-4efd-a763-5a8790e48084" absoluteBounds="0.51500000000000057, 7.2100000000000009, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c3d843c4-4b0e-4769-8b5a-84c8c93aa4d7" isExpanded="false" absoluteBounds="7.375, 0.5, 2, 0.45000000000000018">
+      <DataClassMoniker Name="/SoftLensDataContext/PowerMaster" />
+      <nestedChildShapes>
+        <elementListCompartment Id="58ac5bc6-0430-4ec2-9b0e-a2e0409ccc3a" absoluteBounds="7.3900000000000006, 0.96000000000000085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="548d7cb4-bc8e-4cd2-99d7-11d6e08eae8f" isExpanded="false" absoluteBounds="2.75, 3, 2, 0.45000000000000018">
+      <DataClassMoniker Name="/SoftLensDataContext/LatheMaster" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3ace85ed-e375-4747-8104-e4eb52efdbd4" absoluteBounds="2.7650000000000006, 3.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="86d1ff89-1133-40f8-867e-6995ca0d47d6" isExpanded="false" absoluteBounds="2.75, 6.125, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/SoftLensDataContext/Login" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a401c6b3-badf-4e28-9416-65435e33780a" absoluteBounds="2.7650000000000006, 6.5850000000000009, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7332dbb3-a043-4276-bf64-2944e77fd626" isExpanded="false" absoluteBounds="0.5, 3, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/DespatchChild" />
+      <nestedChildShapes>
+        <elementListCompartment Id="34bada14-41ba-4a8e-8a8a-6bef3e5aea8c" absoluteBounds="0.51500000000000057, 3.4600000000000009, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="388917ac-ad32-483b-a72e-33067dfb4f5b" isExpanded="false" absoluteBounds="5, 6.75, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/SoftLensDataContext/PackingEntryTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="343ed384-35c9-4053-8d1b-26feb12de9d7" absoluteBounds="5.0150000000000006, 7.2100000000000009, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e8e2e98a-be13-492f-8306-b32d680056a6" isExpanded="false" absoluteBounds="0.5, 1.75, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/SoftLensDataContext/BoxPackgcollecList" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5a900bf4-0c04-4137-abf8-2a5cbfa00a34" absoluteBounds="0.51500000000000057, 2.2100000000000009, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="35bcc33a-b389-47a2-bdd3-c97826178772" isExpanded="false" absoluteBounds="7.375, 3, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/QcSerialNo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0889d6aa-0c50-4e23-8f7c-c41be61bfd50" absoluteBounds="7.3900000000000006, 3.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2d25554a-8fa8-4ddd-9109-4cc7cbd6253c" isExpanded="false" absoluteBounds="5, 6.125, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/SoftLensDataContext/PackingEntryData" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e9e83f46-322f-45f9-8744-4c74b84e4324" absoluteBounds="5.0150000000000006, 6.5850000000000009, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4b9db45b-0598-4096-9eac-1296e6524883" isExpanded="false" absoluteBounds="2.75, 3.625, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/SoftLensDataContext/LensBoxPackingRejection" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a2d9a324-0bbe-40d4-804e-c63f69731661" absoluteBounds="2.7650000000000006, 4.0850000000000009, 1.9700000000000002, 4.095418294270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1d11e46b-cf93-4838-99ec-9f02efd04075" isExpanded="false" absoluteBounds="7.375, 3.625, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/SoftLensDataContext/QualityControl" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e7ea7f5d-bbda-4a0a-b8de-68e7c225c713" absoluteBounds="7.3900000000000006, 4.0850000000000009, 1.9700000000000002, 1.7878011067708333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fa8dba84-4da8-44f6-80fc-be56e6aaf482" isExpanded="false" absoluteBounds="2.75, 4.25, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/SoftLensDataContext/LenscollectBoxPackRecord" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d09c99d0-1165-4780-b07b-42eb50d97308" absoluteBounds="2.7650000000000006, 4.7100000000000009, 1.9700000000000002, 5.4415283203125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4a043f77-3a2f-4b8a-b901-1e1bbaede6c9" isExpanded="false" absoluteBounds="7.375, 2.375, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/SoftLensDataContext/PRNnum" />
+      <nestedChildShapes>
+        <elementListCompartment Id="022754ef-115a-4400-b42a-ed8707726a42" absoluteBounds="7.3900000000000006, 2.8350000000000009, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d1cd37d3-f0f9-4691-8a2e-2d2ecb06b7ea" isExpanded="false" absoluteBounds="0.5, 3.625, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/SoftLensDataContext/DespatchTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e5e6fd9c-683a-48ac-9c03-905e4a2893d2" absoluteBounds="0.51500000000000057, 4.0850000000000009, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cef0b731-2e51-4329-bd45-1a2d261ec284" isExpanded="false" absoluteBounds="5, 0.5, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/SoftLensDataContext/MHSRnew" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5b598316-22b6-4871-b225-55f953be8b31" absoluteBounds="5.0150000000000006, 0.96000000000000085, 1.9700000000000002, 5.4415283203125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a935db40-7764-4908-ae74-c24b5cdc79c4" isExpanded="false" absoluteBounds="2.75, 8, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/SoftLensDataContext/MHSR" />
+      <nestedChildShapes>
+        <elementListCompartment Id="634b1cd3-a550-4dba-9bc9-5648cd539bb5" absoluteBounds="2.7650000000000006, 8.46, 1.9700000000000002, 13.902791341145832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="77a3987c-b20b-4544-8923-6782dd2eceef" isExpanded="false" absoluteBounds="5, 4.25, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/MillingLatheNoMaster" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5053d4ed-44c8-43e4-b39a-b1a27521abd9" absoluteBounds="5.0150000000000006, 4.7100000000000009, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c6b9278e-07bf-4dad-ae0d-1859b40c17c3" isExpanded="false" absoluteBounds="7.375, 5.5, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/SI_Tumbling" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c1a0bb5e-459c-4bfb-a5f2-b0a9cc8226a6" absoluteBounds="7.3900000000000006, 5.9600000000000009, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8839a60d-6a56-4a62-8cdf-410a8d5f00c0" isExpanded="false" absoluteBounds="7.375, 4.875, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/SealingCupandPouch" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6292e8ea-1794-462c-83cd-2bd639162033" absoluteBounds="7.3900000000000006, 5.3350000000000009, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9451cc68-3edf-4219-bf1e-96d558ab303f" isExpanded="false" absoluteBounds="5, 4.875, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/ModelMaster" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ed338e0c-9a60-47d9-9277-8cf6c65e567f" absoluteBounds="5.0150000000000006, 5.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bdc9b60d-1370-497a-853f-d78aac34317f" isExpanded="false" absoluteBounds="0.5, 7.375, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/Inprocess_Power_Inspection" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4b5cdf67-9f05-4f30-8d0b-1af0056d2f93" absoluteBounds="0.51499999999999968, 7.8350000000000009, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="53314bd2-df6d-4060-8d78-d40b76a2e5c0" isExpanded="false" absoluteBounds="2.75, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/InspectionsDoc" />
+      <nestedChildShapes>
+        <elementListCompartment Id="096432b7-d7e4-41e6-9d51-c9e5bd40a95f" absoluteBounds="2.7650000000000006, 1.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e1bfed82-f6be-480c-a302-cbc68975f5c7" isExpanded="false" absoluteBounds="0.5, 8, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/InspectionDocData" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5377d001-6e34-4d5f-89e9-b210f260f477" absoluteBounds="0.51500000000000057, 8.46, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="891827e4-ac2f-4540-ade2-3eb2ee2f89f8" isExpanded="false" absoluteBounds="7.375, 7.375, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/TumblingChild" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d99fd8d7-89e2-43af-afa6-300d8c5e6df3" absoluteBounds="7.3900000000000006, 7.8350000000000009, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4ec61799-02f7-4e52-ae7a-4e09abbe4baa" isExpanded="false" absoluteBounds="7.375, 6.75, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/Tumbling" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9608ddfa-9e6e-42f3-a1e1-07b9efdd609b" absoluteBounds="7.3900000000000006, 7.2100000000000009, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="27bdda70-fc69-48bf-b382-0c34e086a1b8" isExpanded="false" absoluteBounds="0.5, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/BatchAllot" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8a63cf1d-b8fb-4f0c-a099-6ecf00d83780" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2a4450f1-219b-49e6-8ba5-79724b9645a6" isExpanded="false" absoluteBounds="0.5, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/Blocking" />
+      <nestedChildShapes>
+        <elementListCompartment Id="90a7dc1c-8fb0-4eed-ab0b-c8a24f5115cd" absoluteBounds="0.51499999999999968, 1.5850000000000009, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d730b565-8ae8-49aa-b7a7-de3302a2a449" isExpanded="false" absoluteBounds="0.5, 2.375, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/DeBlocking" />
+      <nestedChildShapes>
+        <elementListCompartment Id="000e70f5-6901-42d7-b308-d080c33d776f" absoluteBounds="0.51500000000000057, 2.835, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7723d180-3fab-4da3-b6f6-5566605fc6c3" isExpanded="false" absoluteBounds="2.75, 2.375, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/Lathecut" />
+      <nestedChildShapes>
+        <elementListCompartment Id="266cf1e7-5166-41ab-be50-7ec8d2758fca" absoluteBounds="2.7649999999999997, 2.8350000000000009, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5bd917e1-dcdb-4d67-bcbb-bbf176458517" isExpanded="false" absoluteBounds="0.5, 5.5, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/HapticSample" />
+      <nestedChildShapes>
+        <elementListCompartment Id="18ba8403-0524-4e81-9946-a96ba7ae66fe" absoluteBounds="0.51499999999999968, 5.96, 1.9700000000000002, 3.9031168619791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="899388aa-68a9-4ed8-b8e4-74e1d5bc0567" isExpanded="false" absoluteBounds="0.5, 6.125, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/Hydration" />
+      <nestedChildShapes>
+        <elementListCompartment Id="131a65d7-4f4e-4095-8432-a4ee5b9a1e19" absoluteBounds="0.51499999999999968, 6.5850000000000009, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e1cb4301-f3cb-457a-bdcd-47fbe837ac7f" isExpanded="false" absoluteBounds="2.75, 4.875, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/LensMeasurement" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d2bafaa1-4c39-4601-b130-1247325240fe" absoluteBounds="2.7649999999999997, 5.3350000000000009, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c0ef5bb8-c373-4274-8c31-c251b4662a82" isExpanded="false" absoluteBounds="2.75, 6.75, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/LotResult" />
+      <nestedChildShapes>
+        <elementListCompartment Id="43ac8fea-a0f4-4684-9350-38597cc3f4d6" absoluteBounds="2.7650000000000006, 7.2100000000000009, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9dd38365-76b3-485d-9aa8-2e7ff4e9d77e" isExpanded="false" absoluteBounds="5, 1.75, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/MicroscopicInspection" />
+      <nestedChildShapes>
+        <elementListCompartment Id="af6fea48-9ef8-4af9-97cc-c883e0514979" absoluteBounds="5.0150000000000006, 2.2100000000000009, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="26edad35-d808-419e-9d76-b319cbe4d070" isExpanded="false" absoluteBounds="5, 3, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/Milling" />
+      <nestedChildShapes>
+        <elementListCompartment Id="296a803d-c18a-4c34-a8b1-a86b434992a3" absoluteBounds="5.0150000000000006, 3.4600000000000009, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="014e6570-cff6-40d8-9907-be26afcf3392" isExpanded="false" absoluteBounds="5, 8, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/Powerinspection" />
+      <nestedChildShapes>
+        <elementListCompartment Id="922d8690-7137-4a61-b700-2a6fe78b7525" absoluteBounds="5.0150000000000006, 8.46, 1.9700000000000002, 3.9031168619791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bff06143-37db-4c92-b449-a75f4b542374" isExpanded="false" absoluteBounds="5, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/MicroScopicInspCollet" />
+      <nestedChildShapes>
+        <elementListCompartment Id="86265f7f-5af0-4c03-aab7-4258540c5849" absoluteBounds="5.0150000000000006, 1.585, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="19c2562c-baa4-43fc-afc1-c50cbe191160" isExpanded="false" absoluteBounds="2.75, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/InspectionResolution" />
+      <nestedChildShapes>
+        <elementListCompartment Id="15154b56-75be-40d0-a214-1fa52619371f" absoluteBounds="2.7650000000000006, 0.96000000000000085, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9b8f4cfd-f400-415d-af72-0d362f2a3f6d" isExpanded="false" absoluteBounds="2.75, 7.375, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/MattTumblingLen" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bc1e9bbc-47e0-44c9-89d7-cfc893817895" absoluteBounds="2.7650000000000006, 7.8350000000000009, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d3bdcc59-211a-4522-b190-3528a1249063" isExpanded="false" absoluteBounds="7.375, 6.125, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/SO_MattTumbling" />
+      <nestedChildShapes>
+        <elementListCompartment Id="08b2ba1e-399e-4ab3-994d-5dcc7bfd48b5" absoluteBounds="7.3900000000000006, 6.585, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d0506421-1053-49e1-81b5-d0c222c4b114" isExpanded="false" absoluteBounds="5, 5.5, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/ModelPower" />
+      <nestedChildShapes>
+        <elementListCompartment Id="88e9e2c7-e216-4b81-8963-3608c30a3744" absoluteBounds="5.0150000000000006, 5.96, 1.9700000000000002, 6.0184326171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dcdac68d-d226-4cfa-8d5f-52cd523a3797" isExpanded="false" absoluteBounds="7.375, 8, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/TumblingQuantityDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3c7c404b-fd0b-4b00-a7de-c2f83afa8181" absoluteBounds="7.3900000000000006, 8.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2d150dba-8f90-46a9-8dfb-372ef3de46d1" isExpanded="false" absoluteBounds="5, 3.625, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/MillingCleanedLen" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6d9aa80a-da06-4ecc-8963-4ed5bbfb3133" absoluteBounds="5.0150000000000006, 4.085, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5947413a-654d-4b75-bd0b-0721dafb52b2" isExpanded="false" absoluteBounds="0.5, 4.25, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/FirstRetumblingReport" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3dffa3fc-2387-4150-9fb7-cd701199eea7" absoluteBounds="0.515, 4.71, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="66266437-8c47-49f9-880b-7b748273f995" isExpanded="false" absoluteBounds="5, 7.375, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/PackingReport" />
+      <nestedChildShapes>
+        <elementListCompartment Id="be063deb-246b-422e-9198-e2979e1a2537" absoluteBounds="5.015, 7.8350000000000009, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="05d4b9ca-bb23-4836-889b-c35ff819b3e4" isExpanded="false" absoluteBounds="7.375, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/PowerSegregationTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c0ce2325-e87c-4dda-89cd-5c93d2f543b2" absoluteBounds="7.39, 1.585, 1.9700000000000002, 7.556844075520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="708c07ce-19d3-4068-82fa-93bbdaf2dc53" isExpanded="false" absoluteBounds="7.375, 1.75, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/PowerSegregationChild" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c00e9831-7494-4496-ae16-b27014c89ff0" absoluteBounds="7.39, 2.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="70bd8866-1155-4031-89ca-a121cf043694" isExpanded="false" absoluteBounds="2.875, 5.5, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/LensWiping" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c96adbb1-7005-40ac-94b8-031f596aec9d" absoluteBounds="2.8899999999999997, 5.96, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b3887596-0814-4902-9268-4af9c812003e" isExpanded="false" absoluteBounds="9.625, 1.375, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/Pick_Packing" />
+      <nestedChildShapes>
+        <elementListCompartment Id="27774a9f-41c7-4cb2-b49c-064934e54da9" absoluteBounds="9.64, 1.835, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ac72e077-4dde-42ce-88ef-d00c3413743b" isExpanded="false" absoluteBounds="9.75, 2.125, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/BlisterSealingTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ac9248eb-4112-48ac-b4a9-559f8c6ff3c7" absoluteBounds="9.765, 2.585, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="36e423f7-8a09-4cc2-b77c-9b92c1096f8e" isExpanded="false" absoluteBounds="0.625, 4.875, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/GlassyTumblingSO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f1d47993-b59d-4535-a96e-efd3bdf37277" absoluteBounds="0.64000000000000012, 5.335, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d66c1af1-7050-4e9e-8f2c-cfd274ec61a0" isExpanded="false" absoluteBounds="5.125, 2.375, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/MIinFQI" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cf47fcc9-5a9b-4195-9498-266c0f1f4ceb" absoluteBounds="5.14, 2.835, 1.9700000000000002, 4.672322591145833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="195aedbf-cf8d-45ba-9400-bf6f45157e9f" isExpanded="false" absoluteBounds="2.75, 1.75, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/LabelDetailsPacking" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7b569b25-0f88-4ccd-8f2e-3db7e806e047" absoluteBounds="2.7649999999999997, 2.21, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2385cbbc-81b1-41ed-a414-e36e3b259f6a" isExpanded="false" absoluteBounds="9.75, 4, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/BatchFinalReport" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2ef1f8a8-333e-49b4-880f-ad160673fdd1" absoluteBounds="9.765, 4.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0a80c550-d302-47af-bd80-284234dae80a" isExpanded="false" absoluteBounds="9.75, 2.75, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/LensPreperation_Detail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ab110eb3-32d2-4021-aeb2-b4594318184d" absoluteBounds="9.765, 3.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="046b873f-7dd5-4301-81ff-442c8fa0ed26" isExpanded="false" absoluteBounds="9.875, 0.625, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/RemattTumblingLen" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2378c3ab-0fe2-4376-a313-0af0301b2601" absoluteBounds="9.89, 1.085, 1.9700000000000002, 4.8646240234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="03eeb43a-fa8d-4c8d-a210-bf61f238ca57" isExpanded="false" absoluteBounds="9.75, 3.375, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/FinalLensPreparation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d4ad97a3-b96a-402f-93d4-cfaacb5a3c8f" absoluteBounds="9.765, 3.835, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5d49ce7a-1b40-4f51-ae18-45be7d78db36" isExpanded="false" absoluteBounds="9.625, 4.625, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/HapticPowerTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="87cab435-8d8c-475d-b4f5-cfd287d8e62f" absoluteBounds="9.64, 5.085, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a3975d03-b61f-4614-8e09-a53720cc3be9" isExpanded="false" absoluteBounds="9.5, 5.25, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/Pouch_Delete" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5e8f0348-2f72-412a-afef-987cce1e7c14" absoluteBounds="9.515, 5.71, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9afd84c7-b882-4ca9-93c7-2cbdf674ba75" isExpanded="false" absoluteBounds="7.375, 4.25, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/Report_Table" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e9c4b315-2480-4027-9890-5172faf8e35c" absoluteBounds="7.39, 4.71, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="18d2d3b3-0fa3-4e51-a74e-80bf7983e09f" isExpanded="false" absoluteBounds="9.75, 5.875, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/MI_FQIReject" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0c18a63b-abe4-47c4-a301-ccbc44129a49" absoluteBounds="9.765, 6.335, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3541f390-648f-4192-8a22-c590dbfa1e4f" isExpanded="false" absoluteBounds="9.625, 6.625, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/Lensometer_PowerCheck" />
+      <nestedChildShapes>
+        <elementListCompartment Id="699c258a-1b35-4016-aa6a-336dcf52e7ae" absoluteBounds="9.64, 7.0850000000000009, 1.9700000000000002, 7.556844075520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1d3e9eb4-831f-4a44-8c0d-c7d3f11b1423" isExpanded="false" absoluteBounds="10.375, 7.5, 2, 0.45">
+      <DataClassMoniker Name="/SoftLensDataContext/NewBtchAllot" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2df954fe-532a-47e9-bfc9-cdeebcea2b12" absoluteBounds="10.39, 7.96, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

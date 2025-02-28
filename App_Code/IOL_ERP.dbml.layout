@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="IOL_ERP">
+  <DataContextMoniker Name="/IOL_ERPDataContext" />
+  <nestedChildShapes>
+    <classShape Id="dd7d66e5-4069-4113-a11c-8cb7cffb5a4c" absoluteBounds="3.75, 2, 2, 4.8477197265625">
+      <DataClassMoniker Name="/IOL_ERPDataContext/Moulding_Rejection" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b294e402-58c3-4bfe-86ed-47b6792dd213" absoluteBounds="3.765, 2.46, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

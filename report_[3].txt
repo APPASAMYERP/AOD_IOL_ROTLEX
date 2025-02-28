@@ -1,0 +1,67 @@
+public void SavePDF(ReportViewer viewer, string savePath)
+
+{
+
+     byte[] Bytes = viewer.LocalReport.Render(format:"PDF",deviceInfo:"");
+
+ 
+
+     using (FileStream stream = new FileStream(savePath, FileMode.Create))
+
+     {
+
+              stream.Write(Bytes, 0, Bytes.Length);
+    }
+
+ }
+public void SavePDF(ReportViewer viewer, string savePath)
+
+{
+
+     byte[] Bytes = viewer.LocalReport.Render(format:"PDF",deviceInfo:"");
+
+ 
+
+     using (FileStream stream = new FileStream(savePath, FileMode.Create))
+
+     {
+
+              stream.Write(Bytes, 0, Bytes.Length);
+    }
+
+ }
+public void SavePDF(ReportViewer viewer, string savePath)
+
+{
+
+     byte[] Bytes = viewer.LocalReport.Render(format:"PDF",deviceInfo:"");
+
+ 
+
+     using (FileStream stream = new FileStream(savePath, FileMode.Create))
+
+     {
+
+              stream.Write(Bytes, 0, Bytes.Length);
+    }
+
+ }
+public void SavePDF(ReportViewer viewer, string savePath)
+
+{
+
+     byte[] Bytes = viewer.LocalReport.Render(format:"PDF",deviceInfo:"");
+
+ 
+
+     using (FileStream stream = new FileStream(savePath, FileMode.Create))
+
+     {
+
+              stream.Write(Bytes, 0, Bytes.Length);
+    }
+
+ }
+}
+}
+}
