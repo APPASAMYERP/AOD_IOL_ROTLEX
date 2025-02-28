@@ -186,7 +186,7 @@ public partial class frmPower : System.Web.UI.Page
         {
             if (droptyp.SelectedValue == "--Select--")
             {
-                Messagebox("Choose the Type");
+                Messagebox("Choose the Type..");
 
             }
             try
